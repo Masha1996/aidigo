@@ -6,10 +6,92 @@
   font-family: Acrom_webfontt;
   src: url(fonts/the.northern.block_acrom-webfont.ttf);
 }
-.header,
 .footer {
   height: 200px;
   background-color: rgba(139, 1, 40, 0.7);
+}
+.line {
+  height: 5px;
+  border-bottom: solid 1px #a8908a;
+  border-top: solid 2px #a8908a;
+}
+.header {
+  padding-top: 20px;
+}
+.header__logo img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+.header__logo p {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 14px;
+}
+.header__logo p a {
+  text-decoration: none;
+  color: #7c655d;
+}
+.header__logo_tel {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header__search_form {
+  margin-top: 20px;
+  border: none;
+}
+.header__search_form input {
+  color: #a8908a;
+  width: 90%;
+  border-bottom: solid 2px #a8908a;
+}
+.header__label {
+  padding-top: 20px;
+}
+.header__label div {
+  float: left;
+  width: 24%;
+  vertical-align: middle;
+}
+.header__label div img {
+  height: 30px;
+  float: left;
+  margin-right: 2%;
+}
+.header__label div p {
+  line-height: 14px;
+  font-size: 0.9em;
+  margin: 0;
+}
+.header__label div:last-child {
+  width: 35%;
+}
+.header__menu {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.header__menu div {
+  float: left;
+  margin-right: 3%;
+}
+.header__menu div a {
+  font-size: 0.9em;
+  color: #7c655d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header__city {
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+.header__city p {
+  color: #830128;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.header__city i {
+  margin-right: 5px;
 }
 p {
   font-family: Acrom_webfontt;
