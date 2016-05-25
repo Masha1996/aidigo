@@ -11,11 +11,6 @@
 @color_main:rgb(124,101,93);
 @color_secondary:rgb(168,144,138);
 
-
-.footer {
-	height: 200px;
-	background-color: rgba(139,1,40,.7);
-}
 .line {
 	height: 5px;
 	border-bottom: solid 1px @color_secondary;
@@ -25,13 +20,13 @@
 	padding-top: 20px;
 	&__logo { 
 		img {
-			width: 60%;
+			width: 70%;
 			display: block;
 			margin:0 auto;
 		}
 		p {
 			text-align: center;
-			font-size: 1.2em;
+			font-size: 1.4em;
 			line-height: 14px;
 			a {
 				text-decoration: none;
@@ -39,8 +34,9 @@
 			}
 		}
 		&_tel {
-			font-size: 1.3em;
-			font-weight: bold;
+			margin-top: 15px;
+			font-size: 1.5em !important;
+			font-weight: 900;
 			text-decoration: none;
 		}
 	}
@@ -78,7 +74,7 @@
 	}
 	&__label {
 		padding-top: 20px;
-		div {
+		&_icon {
 			float: left;
 			width: 24%;
 			vertical-align: middle;
@@ -94,7 +90,7 @@
 			}
 			&:last-child {
 				width: 35%;
-			};
+			}
 		}
 	}
 	&__menu {
@@ -371,6 +367,74 @@ h1 {
 		}
 	}
 }
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	height: 100%;
+	background-color: rgb(171,157,152);
+	color: white;
+	h5 {
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+	&__contacts {
+		padding-left: 100px;
+		line-height: 14px;
+		
+		p {
+			margin:0px;
+		}
+		&_sety {
+			margin-top: 30px;
+			img {
+				height: 40px;
+				width: 40px;
+			}
+		}
+	}
+	&__links {
+		&_shop {
+			float: left;
+			margin-right: 5%;
+			ul {
+				padding-left: 0px;
+				li {
+					list-style: none;
+					line-height: 16px;
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+	&__pay {
+		text-align: right;
+		padding-right: 50px;
+		p {
+			font-size: 1.3em;
+			display: inline-block;
+			a {
+				color: white !important;
+			}
+		}
+		img {
+			height: 35px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sentence__sentence1_bag:hover {
 	cursor: pointer;
