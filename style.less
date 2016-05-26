@@ -18,6 +18,9 @@
 }
 .header {
 	padding-top: 20px;
+	a {
+	color: @color_main!important;
+}
 	&__logo { 
 		img {
 			width: 70%;
@@ -25,6 +28,8 @@
 			margin:0 auto;
 		}
 		p {
+			color: rgb(131,1,40);
+			font-weight: 500;
 			text-align: center;
 			font-size: 1.4em;
 			line-height: 14px;
@@ -36,8 +41,11 @@
 		&_tel {
 			margin-top: 15px;
 			font-size: 1.5em !important;
-			font-weight: 900;
+			font-weight: bold !important;
 			text-decoration: none;
+			@media (max-width: 950px) {
+					font-size:1.1em !important;
+				}
 		}
 	}
 	&__search {
@@ -54,6 +62,11 @@
 				padding: 15px;
 				border-bottom: solid 1px @color_secondary;
 				float: left;
+				@media (max-width: 950px) {
+					width:60%;
+					margin-left: 20px;
+					font-size: 1em;
+				}
 			}
 			&_img {
 				border:0px;
@@ -81,7 +94,7 @@
 			img {
 				height: 30px;
 				float: left;
-				margin-right: 2%;
+				margin-right: 8%;
 			}
 			p {
 				line-height: 14px;
@@ -114,6 +127,9 @@
 			color: rgb(131,1,40);
 			font-size: 1.5em;
 			font-weight: bold;
+			@media (max-width: 950px) {
+				font-size:1.1em;
+				}
 		}
 		i {
 			margin-right: 5px;
@@ -124,6 +140,7 @@
 p {
 	font-family: Acrom_webfontt; 
 }
+
 
 .content {
 	position: relative;
@@ -264,6 +281,8 @@ h1 {
 			img {
 				height: 70px;
 				margin:0 20px;
+				padding:15px;
+				border:solid 1px @color_main;
 				@media (max-width: 1024px) {
 					height:50px;
 					margin:0 5px;
@@ -321,6 +340,7 @@ h1 {
 		}
 		}
 		&_bag {
+			padding:3px;
 			height: 20px !important;
 			float: left;
 			border: solid 1px rgba(149,125,118,.6);
@@ -348,13 +368,14 @@ h1 {
 		}
 		&_line {
 			height: 100%;
-			width: 30%;
+			width: 37%;
 			margin:0 auto;
 			border-top:solid 2px @color_main;
 			p {
 				font-size: 1.5em;
 				color: rgb(132,2,39);
 				margin:15px auto;
+				margin-bottom: 0px !important;
 				@media (max-width: 1200px) {
 					font-size:1em;
 				}
@@ -362,8 +383,10 @@ h1 {
 		}
 		&_buy {
 			display: block;
-			height: 65px !important;
+			height: 55px !important;
 			margin:0 auto !important;
+			border:solid 1px @color_main;
+			padding:10px;
 		}
 	}
 }
@@ -374,6 +397,9 @@ h1 {
 	height: 100%;
 	background-color: rgb(171,157,152);
 	color: white;
+	a {
+		color: rgb(255,255,255)!important;
+	}
 	h5 {
 			font-size: 1.3em;
 			font-weight: bold;
@@ -394,8 +420,9 @@ h1 {
 		}
 	}
 	&__links {
+		padding-right: 150px;
 		&_shop {
-			float: left;
+			float: right;
 			margin-right: 5%;
 			ul {
 				padding-left: 0px;
@@ -409,7 +436,7 @@ h1 {
 	}
 	&__pay {
 		text-align: right;
-		padding-right: 50px;
+		padding-right: 100px;
 		p {
 			font-size: 1.3em;
 			display: inline-block;
@@ -422,17 +449,6 @@ h1 {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -470,4 +486,19 @@ h1 {
 
 .wish1__first_icon_delete:active {
 	background-color: rgba(139,1,40,.7);
+}
+
+a:hover {
+	color: rgb(242,109,60) !important;
+}
+
+.footer__contacts_sety img:hover {
+	border-radius: 50%;
+	background-color: rgb(242,109,60);
+	height: 41px;
+	width: 41px;
+}
+.footer__contacts_sety img:active {
+	height: 39px;
+	width: 39px;
 }
