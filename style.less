@@ -51,46 +51,53 @@
 	&__search {
 		&_form {
 			margin-top: 20px;
-			border: 0px;
-			padding-right: 30px;
-			input {
+			border-bottom: solid 1px @color_secondary;
+			margin-right: 30px;
+			@media (max-width: 950px) {
+
+				}
+			input[type="search"] {
 				font-size: 1.2em;
 				border:0px;
 				color: @color_secondary;
-				width: 85%;
-				padding-top: 0px !important;
+				width: 89%;
 				padding: 15px;
-				border-bottom: solid 1px @color_secondary;
 				float: left;
-				@media (max-width: 950px) {
-					width:60%;
+				@media (max-width: 1300px) {
+					width:80%;
 					margin-left: 20px;
 					font-size: 1em;
 				}
-			}
-			&_img {
-				border:0px;
-				height: 40px;
-				width: 40px;
-				background-color: white;
-				padding-left:0px !important;
-				i {
-					font-weight: 300;
-					font-size: 2.5em;
-					color: @color_secondary;
-					padding-bottom: 3px;
-					border-bottom: solid 1px @color_secondary;
-
+				@media (max-width: 1050px) {
+					width:75%;
 				}
+				@media (max-width: 950px) {
+					width:70%;
+				}
+				@media (max-width: 720px) {
+					width:60%;
+				}
+				@media (max-width: 550px) {
+					width:55%;
+				}
+			}
+			input[type="submit"] {
+				width: 50px;
+				height: 50px;
+				border: none;
+				text-align: right;
+				background: url(images/search.png) no-repeat 50% 50%;
 			}
 		}
 	}
 	&__label {
 		padding-top: 20px;
+		min-width: 317px;
 		&_icon {
 			float: left;
 			width: 24%;
 			vertical-align: middle;
+			min-width: 100px;
 			img {
 				height: 30px;
 				float: left;
@@ -158,10 +165,16 @@ h1 {
 
 .wish {
 	margin-left: 11%;
+	@media (max-width: 1100px) {
+		margin-left:5% !important;
+	}
 	.wish1 {
 		height: 150px;
 		border-bottom:solid 1px rgb(221,213,208);
 		padding:15px 0px;
+		@media (min-width: 950px) {
+			min-width: 943px;
+		}
 		&:last-child {
 			border-bottom:none;
 		}
@@ -279,7 +292,7 @@ h1 {
 		.icon {
 			margin-left: 3%;
 			img {
-				height: 70px;
+				height: 60px;
 				margin:0 20px;
 				padding:15px;
 				border:solid 1px @color_main;
@@ -331,9 +344,12 @@ h1 {
 			padding-right: 5%;
 		}
 		img{
-			height: 178px;
+			height: 153px;
 			margin:5px auto;
 			margin-left: 0px;
+		@media (min-width: 1500px) {
+			height:180px;
+		}
 		@media (max-width: 500px) {
 			height:110px;
 			margin-left: 15%;
@@ -368,7 +384,7 @@ h1 {
 		}
 		&_line {
 			height: 100%;
-			width: 37%;
+			width: 43%;
 			margin:0 auto;
 			border-top:solid 2px @color_main;
 			p {
